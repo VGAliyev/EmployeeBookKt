@@ -334,7 +334,7 @@ class EmployeeBook {
     private val firstNotNullEmployeeIndex: Int
         get() {
             var index = 0
-            for (i in index..<employees.size) {
+            for (i in employees.indices) {
                 if (employees[i] != null) {
                     index = i
                     break
