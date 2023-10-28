@@ -322,7 +322,7 @@ class EmployeeBook {
         // Обходим все отделы (по условиям их 5)
         for (i in 1..5) {
             if (getEmployeesByDepartment(i).isNotEmpty()) {
-                System.out.printf("Department %d\n", i)
+                println("Department $i\n")
                 for (j in getEmployeesByDepartment(i).indices) {
                     println(getEmployeesByDepartment(i)[j].fullName)
                 }
